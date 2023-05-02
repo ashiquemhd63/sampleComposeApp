@@ -6,9 +6,9 @@ import androidx.lifecycle.ViewModel
 class LoginViewModel : ViewModel(){
     var userLiveData = MutableLiveData<String>()
     var passLiveData = MutableLiveData<String>()
-    var passwordValue = "Passwor@123"
-    var userName = "Admin"
-    var loginStateLiveData = MutableLiveData(false)
+    var passwordValue = "Password@123"
+    var userName = "admin@gmail.com"
+    var loginStateLiveData = MutableLiveData<Boolean>()
     init {
        userLiveData.value = ""
        passLiveData.value = ""
